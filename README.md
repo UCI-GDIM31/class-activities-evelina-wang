@@ -2,9 +2,15 @@
 ## Devlogs
 ### W1
 Write your W1 activity Devlog here.
+Hello world!
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+### The symbols about the C# first know C#
+because r,g and b will change in 0.1.
+But bounce can be 1,2 and so on, it can't be 1.1
+Each line end need ";" 
+
 
 ## Open-Source Assets
 ### W1
