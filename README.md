@@ -10,6 +10,10 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 because r,g and b will change in 0.1.
 But bounce can be 1,2 and so on, it can't be 1.1
 Each line end need ";" 
+### W3
+table 4 quesiton one.
+Our table think input is float and output is boolean.
+Float can tell the player timestamp of the beat to hit. And boolean tell the player whether or not the accurately hit.
 
 
 ## Open-Source Assets
