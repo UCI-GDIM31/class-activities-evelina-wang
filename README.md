@@ -14,7 +14,7 @@ Each line end need ";"
 table 4 quesiton one.
 Our table think input is float and output is boolean.
 Float can tell the player timestamp of the beat to hit. And boolean tell the player whether or not the accurately hit.
-
+I think the class is the bluemap, it is the foundation of all thing.Components with a metaphor is product actually create. And member variable is the "attributes" or "features" of a product. Method is the function of the product.And the ball get extremely bright because their code jump relate bright accumulated.
 
 ## Open-Source Assets
 ### W1
