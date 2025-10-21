@@ -20,13 +20,14 @@ public class SoccerBall : MonoBehaviour
     // You'll also need to have all of your colliders set up properly in the Scene ;)
     //
     // Also, uncomment and FIX the Debug.Log line.
-
+    private int _points = 0;
+    private float timer = 0f;
     private void OnTriggerEnter(Collider other)
     {
         // finish STEP 1 by uncommenting and fixing the below line!
         if (other.tag == "Goal")
         {
-
+            MadeGoal();
             Debug.Log("SoccerBall detected a collision with a trigger collider!");
         }
 
@@ -49,10 +50,13 @@ public class SoccerBall : MonoBehaviour
     // Next, we're going to make a method named MadeGoal to call if the
     //      SoccerBall collided with an object tagged "Goal".
     // MadeGoal RETURNS NOTHING, and has NO INPUT.
-    private void MedaGoal()
+    private void MadeGoal()
     {
         Debug.Log("SoccerBall detected a collision with a trigger collider!");
-
+        _goalVFX.Play();
+        _points++;
+        timer = 0f;
+        _pointsText.text = "Points" + _points;
         // Once you've created MadeGoal,
         //      move your Debug.Log() statement into MadeGoal, and
         //      call MadeGoal from inside your if statement in OnTriggerEnter.
@@ -62,7 +66,8 @@ public class SoccerBall : MonoBehaviour
         // ParticleSystem has a method named Play() that displays the VFX:
         // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ParticleSystem.Play.html 
         //
-        _goalVFX.Play();
+
+
     }
 
     // STEP 4 -------------------------------------------------------------
@@ -84,41 +89,13 @@ public class SoccerBall : MonoBehaviour
     // You will need to:
     //      1. Create a new member variable to keep track of the points.
     //      2. Use your MadeGoal method to update the points and text.
-
-
-
-    private int _pionts = 0;
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Goal"))
-        {
-            MadeGoal();
-        }
-    }
-
-    private void MadeGoal()
-    {
-        _points++;
-
-        if (_pointsText != null)
-        {
-            _pointsText.text = "Points: " + _points;
-        }
-        
-    }
-
-    
-    
-
-
-
-
-
-    
     //
     // STEP 5 -----------------------------------------------------------------
-    
-
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        _timeText.text = "time since last goal" + timer.ToString("F2");
+    }
     // STEP 6 -----------------------------------------------------------------
     // Like the last step, these flags do NOT show you where to put all of the
     //      code that you need to write.
