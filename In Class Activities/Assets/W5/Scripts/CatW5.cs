@@ -27,10 +27,26 @@ public class CatW5 : MonoBehaviour
         //
         // Ask yourself:
         //      Which axis moves the cat forwards and backwards?
+        // I think it is z aix
         //      Which Vector3 static property would be useful here based on
         //          changing that axis?
+        // I think Vector3.forward
         //      Should I modify translation with Vector addition, or multiplication,
         //          or both?
+  
+    
+        Vector3 movement = Vector3.zero;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            movement += Vector3.forward;
+        }
+        else if(Input.GetKey(KeyCode.S))
+        {
+            movement -= Vector3.forward;
+        }
+
+
         //
         // STEP 2
         // After Step 1 is working, add more code to make it possible to flip
@@ -43,7 +59,9 @@ public class CatW5 : MonoBehaviour
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
-        Vector3 translation = Vector3.zero;
+        transform.Translate(movement * Time.deltaTime *_moveSpeed);
+        
+       
         
 
 
@@ -52,7 +70,7 @@ public class CatW5 : MonoBehaviour
         float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;
         transform.Rotate(0, rotation, 0);
 
-        if (translation.magnitude != 0.0f || rotation != 0.0f)
+        if (movement.magnitude != 0.0f || rotation != 0.0f)
         {
             _animator.SetBool(_isWalkingName, true);
         }
