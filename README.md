@@ -23,6 +23,11 @@ I think the class is the bluemap, it is the foundation of all thing.Components w
 The question I am intreseting is "when the vector kill the task" and answer is never.
 I think variable members is cat and deer's movenment. In cat's movement, the method is Update().Because it need cat keep walking. And if deer follow cat also is Update(). If want deer just stay the place that cat stay and not follow is using start. In cat movement I need to Update the keycode to use.
 
+### W6
+Plan to put the componant to Bat and the Bat can follow the player.//
+Unity coding.
+https://docs.google.com/document/d/1e2mN0AU-swOXlUWgrUAqoCe8Foq_KrDtrJpCDu_aOx4/edit?tab=t.0
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
