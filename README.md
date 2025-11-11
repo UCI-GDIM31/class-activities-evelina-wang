@@ -28,6 +28,11 @@ Plan to put the componant to Bat and the Bat can follow the player.//
 Unity coding.
 https://docs.google.com/document/d/1e2mN0AU-swOXlUWgrUAqoCe8Foq_KrDtrJpCDu_aOx4/edit?tab=t.0
 
+### W7
+https://docs.google.com/document/d/13nVwuWGt47ZJIsqeRlTBOlD78hPmrMBLpVFdvgc_doA/edit?tab=t.0
+In step2, "Vector3.forward" is the fixed direction (z-axis),it will not change when player turn different direction. And "transform.forward" are always the direction which player facing.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
