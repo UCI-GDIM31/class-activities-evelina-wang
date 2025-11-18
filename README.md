@@ -32,6 +32,9 @@ https://docs.google.com/document/d/1e2mN0AU-swOXlUWgrUAqoCe8Foq_KrDtrJpCDu_aOx4/
 https://docs.google.com/document/d/13nVwuWGt47ZJIsqeRlTBOlD78hPmrMBLpVFdvgc_doA/edit?tab=t.0
 In step2, "Vector3.forward" is the fixed direction (z-axis),it will not change when player turn different direction. And "transform.forward" are always the direction which player facing.
 
+### W8
+https://docs.google.com/document/d/1n_KTFb7RKX5ALRUG1OJTQXDijw0JehiChVh2Bav-zpk/edit?tab=t.0
+
 
 ## Open-Source Assets
 ### W1
